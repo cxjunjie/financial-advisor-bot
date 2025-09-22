@@ -34,3 +34,15 @@ financial-advisor-bot/
   - requirements.txt         # Python dependencies
   - README.md                # Project documentation
 
+# Installation
+
+1. Clone the repo
+2. Create a virtual environment
+3. Install the dependencies
+4. Install Ollama
+  - ollama pull llama3.2:latest
+
+# Running the app
+1. Run in terminal: uvicorn src.advisor.app:app --reload
+2. Open browser and type in: http://127.0.0.1:8000/docs
+
