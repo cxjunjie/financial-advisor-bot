@@ -20,16 +20,17 @@ A simple AI-powered financial chatbot that provides BUY/SELL recommendations wit
   - LLM-generated natural language explanation
   - Disclaimer
  
+# Project Structure
+
 financial-advisor-bot/
-│
-├── models/                  # Saved LogReg model (logreg_pipeline.pkl)
-├── src/advisor/
-│   ├── data.py              # Download OHLCV data
-│   ├── features.py          # Feature engineering (RSI, SMA10, SMA50)
-│   ├── model.py             # Load model + make predictions
-│   ├── explain.py           # LLM integration for explanations
-│   └── app.py               # FastAPI app (main entry point)
-│
-├── requirements.txt         # Python dependencies
-├── README.md                # Project documentation
+  - models/                  # Saved LogReg model (logreg_pipeline.pkl)
+    - logreg_pipeline.pkl
+  - src/advisor/
+    - data.py              # Download OHLCV data
+    - features.py          # Feature engineering (RSI, SMA10, SMA50)
+    - model.py             # Load model + make predictions
+    - explain.py           # LLM integration for explanations
+  - app.py               # FastAPI app (main entry point)
+  - requirements.txt         # Python dependencies
+  - README.md                # Project documentation
 
